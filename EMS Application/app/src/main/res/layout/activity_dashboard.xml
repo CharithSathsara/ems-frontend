@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_color"
+
+    android:padding="5dp"
+    tools:context=".DashboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:fontFamily="@font/bungee_shade"
+            android:text="MADUSHANKA"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-55dp"
+            android:fontFamily="@font/bungee_shade"
+            android:text="CONSTRUCTION GROUP"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewCreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="7dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="25dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imgCreateAccount"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/create_account_icon"
+                    app:tint="#1155FF" />
+
+                <TextView
+                    android:id="@+id/txtCreate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_toEndOf="@+id/imgCreateAccount"
+                    android:fontFamily="@font/bungee_outline"
+                    android:text="CREATE"
+                    android:textColor="@color/teal_700"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtCreate"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="-50dp"
+                    android:layout_toEndOf="@+id/imgCreateAccount"
+                    android:fontFamily="@font/bungee_outline"
+                    android:text="ACCOUNT"
+                    android:layout_marginBottom="-20dp"
+                    android:textColor="@color/teal_700"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewGetInfoByDate"
+            app:cardElevation="7dp"
+            app:cardCornerRadius="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgCalender"
+                    android:src="@drawable/calender_icon"
+                    android:layout_marginLeft="20dp"
+                    app:tint="#1155FF"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+
+                <TextView
+                    android:id="@+id/txtDetails"
+                    android:text="DETAILS"
+                    android:layout_toEndOf="@+id/imgCalender"
+                    android:textColor="@color/teal_700"
+                    android:textSize="35dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/bungee_outline"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/txtByDate"
+                    android:text="BY DATE"
+                    android:layout_toEndOf="@+id/imgCalender"
+                    android:layout_below="@+id/txtDetails"
+                    android:textColor="@color/teal_700"
+                    android:textSize="35dp"
+                    android:layout_marginTop="-50dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/bungee_outline"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewGetAccounts"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:elevation="7dp"
+            app:cardCornerRadius="25dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imgGetAllEmployee"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/get_accounts_icon"
+                    app:tint="#1155FF" />
+
+                <TextView
+                    android:id="@+id/txtGetAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_toEndOf="@+id/imgGetAllEmployee"
+                    android:fontFamily="@font/bungee_outline"
+                    android:text="GET ALL"
+                    android:textColor="@color/teal_700"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtEmployee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtGetAll"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="-50dp"
+                    android:layout_toEndOf="@+id/imgGetAllEmployee"
+                    android:fontFamily="@font/bungee_outline"
+                    android:text="EMPLOYEES"
+                    android:layout_marginBottom="-20dp"
+                    android:textColor="@color/teal_700"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
